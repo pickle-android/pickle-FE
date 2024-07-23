@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivity">
+
+    <Button
+        android:id="@+id/button_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="종료"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/button_current_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="현위치"
+        android:layout_below="@id/button_close"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/button_add_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="마커찍기"
+        android:layout_below="@id/button_current_location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <fragment
+        android:id="@+id/navigationFragment"
+        android:name="com.tmapmobility.tmap.tmapsdk.ui.fragment.NavigationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+
+
